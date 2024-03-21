@@ -1,10 +1,13 @@
+<h1>Catálogo de Produtos</h1>
+
 <p style="color: green"><%= notice %></p>
 
 <%= render @produto %>
 
-<div>
-  <%= link_to "Alterar", edit_produto_path(@produto) %> |
-  <%= link_to "Voltar", produtos_path %>
+<div class="produto-actions">
 
-  <%= button_to "Excluir", @produto, method: :delete %>
+  <%= link_to "Alterar", edit_produto_path(@produto), class: "btn-show" %>
+  <%= button_to "Excluir", @produto, method: :delete, class: "btn-show" %>
+  <%= link_to "Voltar", produtos_path, class: "btn-show" %>
+
 </div>

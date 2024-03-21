@@ -1,32 +1,42 @@
-<%= form_with(model: produto) do |form| %>
-  <% if produto.errors.any? %>
+<div class="produto-form">
+
+  <h1><%= @produto.new_record? ? "Novo Produto" : "Editar Produto" %></h1>
+
+  <%= form_with(model: produto) do |form| %>
+
+    <% if produto.errors.any? %>
     <div style="color: red">
-      <h2><%= pluralize(produto.errors.count, "error") %> prohibited this produto from being saved:</h2>
+    <h2><%= pluralize(produto.errors.count, "error") %> prohibited this produto from being saved:</h2>
+    
+    <ul>
+    <% produto.errors.each do |error| %>
+      <li><%= error.full_message %></li>
+    <% end %>
+  </ul>
 
-      <ul>
-        <% produto.errors.each do |error| %>
-          <li><%= error.full_message %></li>
-        <% end %>
-      </ul>
+      </div>
+
+    <% end %>
+
+    <div class="form-group">
+      <%= form.label :nome %>
+      <%= form.text_field :nome, class: "form-control" %>
     </div>
+
+    <div class="form-group">
+      <%= form.label :descricao %>
+      <%= form.text_area :descricao, class: "form-control" %>
+    </div>
+
+    <div class="form-group">
+      <%= form.label :preco %>
+      <%= form.text_field :preco, class: "form-control" %>
+    </div>
+
+    <div class="actions">
+      <%= form.submit "Salvar", class: "btn-show" %>
+    </div>
+
   <% end %>
-
-  <div>
-    <%= form.label :nome, style: "display: block" %>
-    <%= form.text_field :nome %>
-  </div>
-
-  <div>
-    <%= form.label :descricao, style: "display: block" %>
-    <%= form.text_area :descricao %>
-  </div>
-
-  <div>
-    <%= form.label :preco, style: "display: block" %>
-    <%= form.text_field :preco %>
-  </div>
-
-  <div>
-    <%= form.submit %>
-  </div>
-<% end %>
+  
+</div>
