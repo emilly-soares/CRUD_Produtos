@@ -25,3 +25,12 @@
  .link_to{
     text-decoration: none;
  }
+
+ .button_to{
+   margin-top: 15px;
+   height: 40px;
+ }
+
+ .link_to{
+   color:blueviolet;
+ }
