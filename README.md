@@ -21,13 +21,8 @@ Este projeto consiste em um Catálogo de Produtos desenvolvido em Ruby on Rails,
 5. Inicie o servidor: `rails server`
 6. Acesse o projeto em seu navegador: `http://localhost:3000`
 
-##Contribuição
-🤝 Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request com melhorias ou correções.
 
-## Autor
-📝 Feito por Emilly Soares 👋🏽
-
-##Imagens
+## Imagens
 
 ![image](https://github.com/emilly-soares/CRUD_Produtos/assets/54116441/9159eb4f-9694-4cdf-ab0a-0054d641e9e7)
 
@@ -37,3 +32,8 @@ Este projeto consiste em um Catálogo de Produtos desenvolvido em Ruby on Rails,
 
 
 
+## Contribuição
+🤝 Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request com melhorias ou correções.
+
+## Autor
+📝 Feito por Emilly Soares 👋🏽
